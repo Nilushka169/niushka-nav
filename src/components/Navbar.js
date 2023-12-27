@@ -1,22 +1,13 @@
 import React from 'react'
-import './Navbar.css'; 
-
+import './Navbar.css';
 
 function Navbar() {
   return (
-    <>
-        <div className='navbar-container'>
-          <video src='/videos/video-2.mp4' autoPlay loop muted />
+    <div className='navbar-container'>
+        <div className="logo">
+            <img src="./logo.png" alt=""/>
         </div>
-        <div className="main-snippet">
-          <h1>Solutions Are There</h1>
-          <h3>Why are you waiting for!</h3>
-        </div>
-        <div className='getStart'>
-          <button className='getStartButton'>Get Start</button>
-          <button className='locationButton'>Location</button>
-        </div>
-    </>
+    </div>
   )
 }
 
