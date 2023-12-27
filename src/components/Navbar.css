@@ -80,7 +80,7 @@ ul li a::before{
   content: '';
   width: 0px;
   height: 5px;
-  background: #2275cd;
+  background: #ffffff;
   position: absolute;
   top: 100%;
   left: 0;
