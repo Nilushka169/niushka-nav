@@ -1,5 +1,10 @@
 import React from "react";
 import "./Navbar.css";
+import { AiFillHome } from "react-icons/ai";
+import { FaExclamationCircle } from "react-icons/fa";
+import { RiProjectorFill } from "react-icons/ri";
+import { IoMailOpen } from "react-icons/io5";
+
 
 function Navbar() {
   return (
@@ -13,16 +18,16 @@ function Navbar() {
       <div className="navbarLinks">
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="#"><AiFillHome />Home</a>
           </li>
           <li>
-            <a href="#">About Us</a>
+            <a href="#"><FaExclamationCircle />About Us</a>
           </li>
           <li>
-            <a href="#">Our Projects</a>
+            <a href="#"><RiProjectorFill />Our Projects</a>
           </li>
           <li>
-            <a href="#">Contact Us</a>
+            <a href="#"><IoMailOpen />Contact Us</a>
           </li>
         </ul>
       </div>
