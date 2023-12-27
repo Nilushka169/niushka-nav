@@ -4,10 +4,12 @@ import { AiFillHome } from "react-icons/ai";
 import { FaExclamationCircle } from "react-icons/fa";
 import { RiProjectorFill } from "react-icons/ri";
 import { IoMailOpen } from "react-icons/io5";
+import { TiThMenuOutline } from "react-icons/ti";
 
 
 function Navbar() {
   return (
+    <>
     <nav className="navbar-container">
       <div className="logo">
         <img src="./logo.png" alt="" />
@@ -31,8 +33,12 @@ function Navbar() {
           </li>
         </ul>
       </div>
+      <div className="dropdownmenu"><TiThMenuOutline />
+</div>
       
     </nav>
+    
+    </>
   );
 }
 
