@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+import NavPage from './components/NavPage';
 import './App.css';
 
 
@@ -8,7 +8,7 @@ import './App.css';
 function App() {
   return (
     <>
-      <Navbar />
+      <NavPage />
       
 
       </>
