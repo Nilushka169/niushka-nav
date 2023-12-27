@@ -65,27 +65,46 @@ img {
   left: 35%;
   transform: translate(-50%);
 }
-ul li {
-  list-style: none;
-}
+
 .navbarLinks a {
   display: flex;
   text-decoration: none;
   align-items: center;
   gap: 5px;
 }
+ul li {
+  list-style: none;
+  position: relative;
+}
+ul li a::before{
+  content: '';
+  width: 0px;
+  height: 5px;
+  background: #2275cd;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: 0.5s;
+}
+ul li:hover a:before{
+  width: 50%;
+  transform: translateX(100%);
+
+}
+
 .navbarLinks ul {
   display: grid;
   grid-template-columns: repeat(4,auto);
-  grid-gap: 45px;
+  grid-gap: 40px;
   font-size: 1.2rem;
   align-items: center;
   text-align: center;
-  justify-content: end;
+  justify-content: center;
 }
 .navbarLinks a{
   text-decoration: none;
   color: aliceblue;
   font-weight: 700;
 }
+
 
