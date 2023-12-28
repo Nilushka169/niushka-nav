@@ -70,7 +70,7 @@ video {
 }
 
 h1 {
-  font-size: 70px;
+  font-size: 90px;
   font-weight: 900;
   font-family: "Foldit", sans-serif;
 }
@@ -80,7 +80,7 @@ h3 {
   position: absolute;
   top: 100%;
 }
-.main-snippet-lowpx {
+.lowpx-snippet {
   display: none;
 }
 
@@ -94,39 +94,21 @@ h3 {
     transform: scale(0.8);
     width: 20%;
   }
-  .main-snippet-lowpx {
+  .lowpx-snippet {
     display: none;
   }
 }
 
 @media (max-width: 398px) {
   .h1-main {
-    display: none;
+    font-size: 78px;
   }
   .h3-main {
-    display: none;
+    font-size: 26px;
   }
-  .lowpx-snippet h1 {
-    font-size: 90px;
+  .main-snippet{
     position: absolute;
-    align-items: center;
-    text-align: start;
-  }
-  .lowpx-snippet h1{
     top: 20%;
-    font-family: "Foldit", sans-serif;
-    font-weight: 900;
-  }
-  .lowpx-snippet h3{
-    font-size: 27px;
-    position: absolute;
-    align-items: center;
-    text-align: start;
-  }
-  .lowpx-snippet h3{
-    top: 65%;
-    color: aliceblue;
-    font-weight: 700;
   }
 }
 
