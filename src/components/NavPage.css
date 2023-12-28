@@ -1,4 +1,4 @@
-.navpage-container{
+.navpage-container {
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -55,11 +55,11 @@ video {
 }
 
 .getStartButton:hover {
-  animation: buttonAnimation 0.7s infinite;
+  animation: buttonAnimation 1s infinite;
 }
 
 .locationButton:hover {
-  animation: buttonAnimation 0.7s infinite;
+  animation: buttonAnimation 1s infinite;
 }
 
 .main-snippet {
@@ -70,7 +70,7 @@ video {
 }
 
 h1 {
-  font-size: 70px;
+  font-size: 90px;
   font-weight: 900;
   font-family: "Foldit", sans-serif;
 }
@@ -79,6 +79,9 @@ h3 {
   font-weight: 700;
   position: absolute;
   top: 100%;
+}
+.lowpx-snippet {
+  display: none;
 }
 
 @media (max-width: 815px) {
@@ -91,4 +94,33 @@ h3 {
     transform: scale(0.8);
     width: 20%;
   }
+  .lowpx-snippet {
+    display: none;
+  }
+}
+
+@media (max-width: 398px) {
+  .h1-main {
+    font-size: 78px;
+  }
+  .h3-main {
+    font-size: 26px;
+  }
+  .main-snippet{
+    position: absolute;
+    top: 20%;
+  }
+}
+
+@media(max-width:495px){
+  .getStartButton {
+  width: 150px;
+}
+
+.locationButton {
+  width: 150px;
+}
+.getStart{
+  justify-content: space-between;
+}
 }
