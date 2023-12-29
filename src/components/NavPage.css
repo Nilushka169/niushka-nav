@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -6,7 +7,7 @@ body, html {
 }
 
 video {
-  object-fit:cover;
+  object-fit: cover;
   width: 120%;
   height: 100%;
   position: fixed;
@@ -16,7 +17,12 @@ video {
   position: absolute;
   width: 50%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3); /* Adjust the alpha value (last value) to change darkness */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.3
+  ); /* Adjust the alpha value (last value) to change darkness */
 }
 
 .getStartButton {
@@ -73,29 +79,69 @@ video {
 
 .main-snippet {
   position: absolute;
-  top: 45%;
+  top: 20%;
   left: 3%;
-}
-@font-face {
-  font-family: title;
-  src: url(../../public/Enigma.ttf);
 }
 
 h1 {
-  font-size: 90px;
-  font-weight: 900;
-  color: #000000;
-  font-family: "title", sans-serif;
 }
+@keyframes slideInBottom {
+  from {
+    transform: translateY(300px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.h1-1 {
+  font-size: 100px;
+  font-weight: 900;
+  letter-spacing: -6px;
+  padding-inline-end: 2px;
+  background: linear-gradient(to right, #0580cdea 5%, #022651 70%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Cantata One", serif;
+  text-transform: uppercase;
+
+  animation: slideInBottom 0.3s ease-in 0.1s 1 normal none;
+}
+.h1-2 {
+  font-size: 100px;
+  font-weight: 900;
+  letter-spacing: -6px;
+  background: linear-gradient(to right, #0580cdea 5%, #022651 70%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Cantata One", serif;
+  text-transform: uppercase;
+
+  animation: slideInBottom 0.3s ease-in 0.2s 1 normal none;
+}
+.h1-3 {
+  display: flex;
+  font-size: 100px;
+  font-weight: 900;
+  letter-spacing: -6px;
+  background: linear-gradient(to right, #0580cdea 5%, #022651 70%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Cantata One", serif;
+  text-transform: uppercase;
+
+  animation: slideInBottom 0.3s ease-in 0.3s 1 normal none;
+}
+
 h3 {
-  font-size: 55px;
+  font-size: 45px;
   font-weight: 900;
   position: absolute;
   background: rgb(113, 107, 107);
   -webkit-background-clip: text;
   color: transparent;
-  font-family: 'Stylish', serif;
+  font-family: "Stylish", serif;
   top: 100%;
+  animation: slideInBottom 0.3s ease-in 0.4s 1 normal none;
 }
 
 .lowpx-snippet {
@@ -118,31 +164,30 @@ h3 {
 }
 
 @media (max-width: 398px) {
-  h1{
+  h1 {
     font-size: 70px;
-    text-transform: uppercase;
+    text-align: center;
   }
   h3 {
     font-size: 35px;
   }
-  .main-snippet{
+  .main-snippet {
     position: absolute;
     top: 20%;
     left: -0.5%;
     justify-content: center;
   }
-
 }
 
-@media(max-width:531px){
+@media (max-width: 558px) {
   .getStartButton {
-  width: 150px;
-}
+    width: 150px;
+  }
 
-.locationButton {
-  width: 150px;
-}
-.getStart{
-  justify-content: space-between;
-}
+  .locationButton {
+    width: 150px;
+  }
+  .getStart {
+    justify-content: space-between;
+  }
 }

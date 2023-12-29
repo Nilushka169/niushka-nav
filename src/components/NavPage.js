@@ -1,7 +1,6 @@
 import React from "react";
 import "./NavPage.css";
 import Navbar from "./Navbar";
-import { motion } from "framer-motion";
 
 function NavPage() {
   return (
@@ -13,22 +12,14 @@ function NavPage() {
         <video src="./video-4.mp4" autoPlay pause muted />
       </div>
       <div className="main-snippet">
-        <motion.div
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 1.3 }}
-        >
-          <h1 className="h1-main">Solutions Are There</h1>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1, duration: 0.7 }}
-        >
+
+            <div className="h1-1">Solutions</div>
+            <div className="h1-2">Are </div>
+            <div className="h1-3">There !</div>
+
+        <div>
           <h3 className="h3-main">Why are you waiting for!</h3>
-        </motion.div>
+        </div>
       </div>
       <div className="lowpx-snippet">
         <h1>
