@@ -9,17 +9,23 @@ function NavPage() {
         <div className="navbar-get">
           <Navbar />
         </div>
-        <video src="./video-2.mp4" autoPlay loop muted />
+        <video src="./video-4.mp4" autoPlay pause muted />
       </div>
       <div className="main-snippet">
-        <h1 className="h1-main">Solutions Are There</h1>
-        <h3 className="h3-main">Why are you waiting for!</h3>
+
+            <div className="h1-1">Solutions</div>
+            <div className="h1-2">Are </div>
+            <div className="h1-3">There !</div>
+
+        <div>
+          <h3 className="h3-main">Why are you waiting for!</h3>
+        </div>
       </div>
       <div className="lowpx-snippet">
         <h1>
           Solutions <br /> Are <br /> There
         </h1>
-        <h3 >Why are you waiting for!</h3>
+        <h3>Why are you waiting for!</h3>
       </div>
       <div className="getStart">
         <button className="getStartButton">Get Start</button>
