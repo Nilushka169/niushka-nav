@@ -5,6 +5,8 @@ import { FaExclamationCircle } from "react-icons/fa";
 import { RiProjectorFill } from "react-icons/ri";
 import { IoMailOpen } from "react-icons/io5";
 import { TiThMenuOutline } from "react-icons/ti";
+import { FaWindowClose } from "react-icons/fa";
+
 
 function Navbar() {
 
@@ -51,7 +53,7 @@ function Navbar() {
           </ul>
         </div>
         <div className="dropdownmenu" onClick={dropdownmenuclick}>
-          <TiThMenuOutline />
+          {ismobileLinksOpen ? <FaWindowClose /> : <TiThMenuOutline />}
         </div>
       </nav>
       <div className={ismobileLinksOpen ? "mobileLinks open" : "mobileLinks"}>

@@ -223,5 +223,10 @@ ul li:hover a:before {
       padding: 0 40px;
       font-size: 100%;
     }
+    .mobileLinks {
+      height: 300px;
+      width: 85%;
+      z-index: 2;
+    }
   }
 }
