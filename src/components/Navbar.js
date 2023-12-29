@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import "./Navbar.css";
 import { AiFillHome } from "react-icons/ai";
 import { FaExclamationCircle } from "react-icons/fa";
@@ -6,18 +6,23 @@ import { RiProjectorFill } from "react-icons/ri";
 import { IoMailOpen } from "react-icons/io5";
 import { TiThMenuOutline } from "react-icons/ti";
 import { FaWindowClose } from "react-icons/fa";
-
+import { motion } from "framer-motion";
 
 function Navbar() {
-
   const [ismobileLinksOpen, setIsmobileLinksOpen] = useState(false);
 
   const dropdownmenuclick = () => {
     setIsmobileLinksOpen(!ismobileLinksOpen);
-  }
+  };
   return (
     <>
-      <nav className="navbar-container">
+      <motion.div
+        initial={{ opacity: 0, x: -500 }}
+        whileInView={{ opacity: 2, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.7, duration: 0.3 }}
+        className="navbar-container"
+      >
         <div className="logo">
           <img src="./logo.png" alt="" />
           <h2>
@@ -55,29 +60,29 @@ function Navbar() {
         <div className="dropdownmenu" onClick={dropdownmenuclick}>
           {ismobileLinksOpen ? <FaWindowClose /> : <TiThMenuOutline />}
         </div>
-      </nav>
+      </motion.div>
       <div className={ismobileLinksOpen ? "mobileLinks open" : "mobileLinks"}>
         <ul>
           <li>
-            <a href="#">
+            <a href="/">
               <AiFillHome />
               Home
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="/">
               <FaExclamationCircle />
               About Us
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="/">
               <RiProjectorFill />
               Our Projects
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="/">
               <IoMailOpen />
               Contact Us
             </a>

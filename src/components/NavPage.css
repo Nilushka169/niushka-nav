@@ -25,6 +25,7 @@ video {
   color: aliceblue;
   border: 3px solid white;
   cursor: pointer;
+  letter-spacing: 1px;
 }
 
 .locationButton {
@@ -40,6 +41,7 @@ video {
   color: black;
   border: 5px solid white;
   cursor: pointer;
+  letter-spacing: 1px;
 }
 
 @keyframes buttonAnimation {
