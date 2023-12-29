@@ -16,15 +16,11 @@ function Navbar() {
   };
   return (
     <>
-      <motion.div
-        initial={{ opacity: 0, x: -500 }}
-        whileInView={{ opacity: 2, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.7, duration: 0.3 }}
+      <div
         className="navbar-container"
       >
         <div className="logo">
-          <img src="./logo.png" alt="" />
+          <img className="imglogo" src="./logo.png" alt="" />
           <h2>
             PURE<span>-X</span>
           </h2>
@@ -60,7 +56,7 @@ function Navbar() {
         <div className="dropdownmenu" onClick={dropdownmenuclick}>
           {ismobileLinksOpen ? <FaWindowClose /> : <TiThMenuOutline />}
         </div>
-      </motion.div>
+      </div>
       <div className={ismobileLinksOpen ? "mobileLinks open" : "mobileLinks"}>
         <ul>
           <li>

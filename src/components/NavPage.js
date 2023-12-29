@@ -10,7 +10,7 @@ function NavPage() {
         <div className="navbar-get">
           <Navbar />
         </div>
-        <video src="./video-2.mp4" autoPlay loop muted />
+        <video src="./video-4.mp4" autoPlay pause muted />
       </div>
       <div className="main-snippet">
         <motion.div
